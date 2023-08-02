@@ -1,0 +1,34 @@
+---
+import BlogCard from "../../components/BlogCard";
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const allBlogPosts = await getCollection("blog");
+---
+
+<Layout title="Blogs">
+  <div class="flex items-center mb-8">
+    <a
+      href="/"
+      class="mr-3 flex items-center text-gray-400 hover:text-black dark:hover:text-white"
+    >
+      <i data-lucide="arrow-left"></i>
+    </a>
+    <div>
+      <h1 class="text-lg">Blogs</h1>
+      <p class="text-gray-600 dark:text-gray-300">
+        A collection of thoughts, ideas and snippets from my life.
+      </p>
+    </div>
+  </div>
+  {
+    allBlogPosts.map((post) => (
+      <BlogCard
+        title={post.data.title}
+        description={post.data.description}
+        cover={post.data.cover}
+        href={`/posts/${post.slug}`}
+      />
+    ))
+  }
+</Layout>

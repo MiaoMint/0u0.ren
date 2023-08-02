@@ -1,0 +1,44 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("blog");
+  return blogEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.title}>
+  <div class="flex mb-8">
+    <a
+      href="/posts"
+      class="mr-3 flex items-center text-gray-400 hover:text-black dark:hover:text-white"
+    >
+      <i data-lucide="arrow-left"></i>
+    </a>
+    <div>
+      <h1 class="text-lg">{entry.data.title}</h1>
+      <time datetime={entry.data.date.toISOString()}>
+        {entry.data.date.toDateString()}
+      </time>
+    </div>
+  </div>
+  {
+    entry.data.cover && (
+      <img
+        class="lg:scale-110 h-40 md:h-64 w-full rounded-lg object-cover mb-8"
+        src={entry.data.cover}
+        alt={entry.data.title}
+      />
+    )
+  }
+  <div class="markdown-body">
+    <Content />
+  </div>
+</Layout>

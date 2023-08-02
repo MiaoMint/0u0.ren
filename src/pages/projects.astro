@@ -1,0 +1,23 @@
+---
+import GithubProjects from "../components/GithubProjects";
+import { siteConfig } from "../config";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Projects">
+  <div class="flex items-center mb-8">
+    <a
+      href="/"
+      class="mr-3 flex items-center text-gray-400 hover:text-black dark:hover:text-white"
+    >
+      <i data-lucide="arrow-left"></i>
+    </a>
+    <div>
+      <h1 class="text-lg">Projects</h1>
+      <p class="text-gray-600 dark:text-gray-300">
+        Here are some of the projects I've worked on.
+      </p>
+    </div>
+  </div>
+  <GithubProjects github={siteConfig.githubUserName} client:load />
+</Layout>

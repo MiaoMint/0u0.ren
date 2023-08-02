@@ -1,5 +1,5 @@
 {
-  "name": "miaohome",
+  "name": "0u0.ren",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,6 +10,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.9.1"
+    "@astrojs/react": "^2.2.1",
+    "@astrojs/tailwind": "^4.0.0",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "astro": "^2.9.1",
+    "clsx": "^2.0.0",
+    "lucide": "^0.263.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tailwindcss": "^3.0.24"
   }
 }
