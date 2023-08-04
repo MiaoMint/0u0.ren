@@ -31,16 +31,15 @@ const { title } = Astro.props;
         top: 0;
         z-index: -1;
         background-image: var(--lightBackground);
-        /* background-image: url(https://api.paugram.com/wallpaper/); */
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        mix-blend-mode: multiply;
         opacity: 0.8;
       }
       /* 媒体查询 dark 模式 */
       @media (prefers-color-scheme: dark) {
         body:before {
+          background-color: #000;
           background-image: var(--darkBackground);
         }
       }
