@@ -3,7 +3,7 @@ export const siteConfig = {
   description: "Student | Full Stack Developer | 喵~",
   logo: "https://github.com/MiaoMint.png",
   githubUserName: "MiaoMint",
-  background: "/images/background.png",
+  background: "/images/background_k-on.png",
   about:
     "我是 MiaoMint ，你也可以叫我喵薄荷、小喵。是一个小菜喵~，喜欢 EDM 喜欢看番但是是个假二次元。目前正在使用 Flutter 开发 Miru。",
 
