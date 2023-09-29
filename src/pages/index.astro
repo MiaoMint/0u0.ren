@@ -77,22 +77,22 @@ const allBlogPosts = await getCollection("blog");
     </div>
     <div class="mb-8">
       <Button>Friends</Button>
-      <div
-        class="max-h-[200px] w-full overflow-auto flex flex-wrap flex-col scrollbar"
-      >
-        {
-          siteConfig.friends
-            .sort(() => 0.5 - Math.random())
-            .map((friend) => (
-              <FriendCard
-                title={friend.title}
-                href={friend.link}
-                icon={friend.icon}
-                description={friend.description}
-              />
-            ))
-        }
-      </div>
+      <Fragment client:load>
+        <div class="max-h-[200px] w-full overflow-auto flex flex-wrap flex-col">
+          {
+            siteConfig.friends
+              .sort(() => 0.5 - Math.random())
+              .map((friend) => (
+                <FriendCard
+                  title={friend.title}
+                  href={friend.link}
+                  icon={friend.icon}
+                  description={friend.description}
+                />
+              ))
+          }
+        </div>
+      </Fragment>
     </div>
   </div>
 </Layout>
