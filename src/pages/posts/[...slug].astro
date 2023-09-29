@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
+import BackButton from "../../components/BackButton";
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blog");
@@ -16,12 +17,7 @@ const { Content } = await entry.render();
 
 <Layout title={entry.data.title}>
   <div class="flex mb-8">
-    <a
-      href="/posts"
-      class="mr-3 flex items-center text-gray-400 hover:text-black dark:hover:text-white"
-    >
-      <i data-lucide="arrow-left"></i>
-    </a>
+    <BackButton client:load />
     <div>
       <h1 class="text-lg">{entry.data.title}</h1>
       <time datetime={entry.data.date.toISOString()}>

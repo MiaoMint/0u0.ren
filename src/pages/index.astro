@@ -27,12 +27,12 @@ const allBlogPosts = await getCollection("blog");
           {
             siteConfig.social.map((social) => (
               <a
-                class="inline-block mt-2 mr-3 text-sm text-gray-400 hover:text-black dark:hover:text-white"
+                class="inline-block mt-2 mr-3  text-sm text-gray-400 hover:text-black dark:hover:text-white"
                 href={social.link}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i data-lucide={social.icon} class="w-5 h-5" />
+                <Fragment set:html={social.icon} />
               </a>
             ))
           }

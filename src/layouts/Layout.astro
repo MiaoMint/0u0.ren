@@ -1,5 +1,6 @@
 ---
 import { siteConfig } from "../config";
+import { ViewTransitions } from "astro:transitions";
 
 export interface Props {
   title: string;
@@ -7,7 +8,7 @@ export interface Props {
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -41,15 +42,14 @@ const { title } = Astro.props;
         }
       }
     </style>
+    <ViewTransitions />
   </head>
   <body class="dark:text-white">
-    <main class="md:w-[600px] mt-28 p-5 lg:ml-20 min-h-screen">
+    <main
+      class="md:w-[600px] mt-28 p-5 lg:ml-20 min-h-screen"
+      transition:animate="slide"
+    >
       <slot />
     </main>
-
-    <script>
-      import { createIcons, icons } from "lucide";
-      createIcons({ icons });
-    </script>
   </body>
 </html>
