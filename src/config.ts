@@ -49,4 +49,61 @@ export const siteConfig = {
       link: "https://github.com/MiaoMint/hitokoto-new-tab",
     },
   ],
+
+  friends: [
+    {
+      title: "ilunp",
+      icon: "https://avatars.githubusercontent.com/u/46992517?v=4",
+      link: "https://ilunp.com/",
+      description: "一个二比卵子罢了",
+    },
+    {
+      title: "SuemorのBlog",
+      icon: "https://y.suemor.com/images89030875.jpeg",
+      link: "https://www.suemor.com/",
+      description: "所谓自由就是可以说二加二等于四的自由",
+    },
+    {
+      title: "Bhao",
+      icon: "https://cdns.cat.beer/blog/content/logo.png",
+      link: "https://dwd.moe/",
+      description: "布好小可爱",
+    },
+    {
+      title: "若志随笔",
+      icon: "https://q1.qlogo.cn/g?b=qq&nk=80360650&s=100",
+      link: "https://www.rz.sb/",
+      description: "愿世界安康，愿你我皆好！",
+    },
+    {
+      title: "XZH的博客",
+      icon: "https://img.xzh.gs/i/2023/08/06/64ce934c0d625.jpg",
+      link: "https://blog.xzh.gs/",
+      description: "咕咕咕？",
+    },
+    {
+      title: "折纸信笺",
+      icon: "https://cravatar.cn/avatar/ead40c7698562c4104d4bac4a3d379f2",
+      link: "https://zzz.moe/",
+      description: "拾起这平凡的时间",
+    },
+    {
+      title: "知雨",
+      icon: "https://coor.top/avatar",
+      link: "https://coor.top/",
+      description: "桃之夭夭，灼灼其华",
+    },
+    {
+      title: "捞人的小站",
+      icon: "https://fastly.jsdelivr.net/gh/wuhang2003/images@main/avatar.jpg",
+      link: "https://zwh.moe/",
+      description: "一起来玩吧~",
+    },
+    {
+      title: "TimochanのBlog",
+      icon: "https://www.timochan.cn/api/objects/icon/9s6tbcvax674yv2m88.jpg",
+      link: "https://www.timochan.cn/",
+      description: "Let's start learning",
+    },
+  ],
 };

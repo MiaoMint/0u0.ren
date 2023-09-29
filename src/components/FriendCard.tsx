@@ -9,7 +9,7 @@ export default function FriendCard({
   href: string;
   icon?: string;
   title: string;
-  description: string;
+  description?: string;
 }) {
   return (
     <a
@@ -18,9 +18,14 @@ export default function FriendCard({
       title={description}
       target="_blank"
     >
-      <Card className="flex flex-col items-center">
+      <Card className="flex items-center">
         {icon && (
-          <img src={icon} className="w-8 h-8 object-contain rounded-full " />
+          <img
+            src={icon}
+            className="w-6 h-6 object-contain rounded-full mr-2"
+            alt={title}
+            referrerPolicy="no-referrer"
+          />
         )}
         <div>{title}</div>
       </Card>
