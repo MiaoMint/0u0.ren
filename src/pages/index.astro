@@ -6,7 +6,7 @@ import Group from "../components/Group";
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import { siteConfig } from "../config";
-import FriendCard from "../components/FriendCard";
+import Friends from "../components/Friends";
 
 const allBlogPosts = await getCollection("blog");
 ---
@@ -77,22 +77,7 @@ const allBlogPosts = await getCollection("blog");
     </div>
     <div class="mb-8">
       <Button>Friends</Button>
-      <Fragment client:load>
-        <div class="max-h-[200px] w-full overflow-auto flex flex-wrap flex-col">
-          {
-            siteConfig.friends
-              .sort(() => 0.5 - Math.random())
-              .map((friend) => (
-                <FriendCard
-                  title={friend.title}
-                  href={friend.link}
-                  icon={friend.icon}
-                  description={friend.description}
-                />
-              ))
-          }
-        </div>
-      </Fragment>
+      <Friends client:load />
     </div>
   </div>
 </Layout>
