@@ -105,5 +105,11 @@ export const siteConfig = {
       link: "https://www.timochan.cn/",
       description: "Let's start learning",
     },
+    {
+      title: "JunBlog",
+      icon: "https://blog.mo60.cn/portrait.php",
+      link: "https://blog.mo60.cn/",
+      description: "网安大佬！",
+    },
   ],
 };
