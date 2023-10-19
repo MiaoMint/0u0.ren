@@ -70,4 +70,6 @@
 *{
   scrollbar-width: auto;
   scrollbar-color: auto;
+  scrollbar-gutter: auto;
+  scroll-behavior: smooth;
 }
