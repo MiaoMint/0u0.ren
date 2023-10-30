@@ -111,5 +111,11 @@ export const siteConfig = {
       link: "https://blog.mo60.cn/",
       description: "网安大佬！",
     },
+    {
+      title: "Sualiu's notes",
+      icon: "https://www.rmoe.top/usr/i.jpg",
+      link: "https://www.rmoe.top/",
+      description: "木屋随风摇曳，记忆随风飘扬",
+    },
   ],
 };
