@@ -15,7 +15,7 @@ export default function ({
   oneLine?: boolean;
 }) {
   return (
-    <a href={href} title="View {title}" target="_blank">
+    <a href={href} title={`View ${title}`} target="_blank">
       <Card>
         <div>
           <h4 className="font-bold flex items-center">
