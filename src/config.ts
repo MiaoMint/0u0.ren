@@ -122,5 +122,6 @@ export const siteConfig = {
       icon: "https://avatars.githubusercontent.com/u/74389842?v=4",
       link: "https://efuo.me",
       description: "a fanatical open sourceror."
+    }
   ],
 };
