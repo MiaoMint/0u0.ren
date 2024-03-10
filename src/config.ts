@@ -117,5 +117,11 @@ export const siteConfig = {
       link: "https://www.rmoe.top/",
       description: "木屋随风摇曳，记忆随风飘扬",
     },
+    {
+      title: "Efuo",
+      icon: "https://avatars.githubusercontent.com/u/74389842?v=4",
+      link: "https://efuo.me",
+      description: "a fanatical open sourceror."
+    },
   ],
 };
