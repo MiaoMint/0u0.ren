@@ -120,7 +120,7 @@ export const siteConfig = {
     {
       title: "Efuo",
       icon: "https://avatars.githubusercontent.com/u/74389842?v=4",
-      link: "https://efuo.me",
+      link: "https://efu.me",
       description: "a fanatical open sourceror."
     },
   ],
