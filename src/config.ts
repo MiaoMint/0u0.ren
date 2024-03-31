@@ -123,5 +123,11 @@ export const siteConfig = {
       link: "https://efu.me",
       description: "a fanatical open sourceror."
     },
+    {
+      title: "btwoa",
+      icon: "https://ovo.btwoa.com/btwoa.jpg",
+      link: "https://blog.btwoa.com",
+      description: "世界为你简单"
+    },
   ],
 };
