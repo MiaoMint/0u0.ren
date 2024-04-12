@@ -129,5 +129,11 @@ export const siteConfig = {
       link: "https://blog.btwoa.com",
       description: "世界为你简单"
     },
+    {
+      title: "戴兜",
+      icon: "https://im.daidr.me/images/avatar.png",
+      link: "https://im.daidr.me",
+      description: "好可爱哇！"
+    }
   ],
 };
