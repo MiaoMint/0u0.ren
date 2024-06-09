@@ -121,19 +121,25 @@ export const siteConfig = {
       title: "Efuo",
       icon: "https://avatars.githubusercontent.com/u/74389842?v=4",
       link: "https://efu.me",
-      description: "a fanatical open sourceror."
+      description: "a fanatical open sourceror.",
     },
     {
       title: "btwoa",
       icon: "https://ovo.btwoa.com/btwoa.jpg",
       link: "https://blog.btwoa.com",
-      description: "世界为你简单"
+      description: "世界为你简单",
     },
     {
       title: "戴兜",
       icon: "https://im.daidr.me/images/avatar.png",
       link: "https://im.daidr.me",
-      description: "好可爱哇！"
-    }
+      description: "好可爱哇！",
+    },
+    {
+      title: "天翔TNXGの空间站",
+      icon: "https://api-space.tnxg.top/avatar?s=qq",
+      link: "https://tnxg.top",
+      description: "明日尚未到来，希望凝于心上",
+    },
   ],
 };
