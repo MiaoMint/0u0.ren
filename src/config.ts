@@ -141,5 +141,11 @@ export const siteConfig = {
       link: "https://tnxg.top",
       description: "明日尚未到来，希望凝于心上",
     },
+    {
+      title: "浅小沫",
+      icon: "https://www.xdm.me/_next/image?url=%2Favatar.jpg&w=64&q=75",
+      link: "https://www.xdm.me/",
+      description: "Meeting you is the best of the best.",
+    },
   ],
 };
