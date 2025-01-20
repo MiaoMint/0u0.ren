@@ -147,5 +147,11 @@ export const siteConfig = {
       link: "https://www.qxm.me/",
       description: "Meeting you is the best of the best.",
     },
+    {
+      title: "H2Sxxa",
+      icon: "https://h2sxxa.github.io/img/custom/fluid.png",
+      link: "https://h2sxxa.github.io/",
+      description: "Toho lover",
+    },
   ],
 };
