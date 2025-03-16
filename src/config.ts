@@ -153,5 +153,11 @@ export const siteConfig = {
       link: "https://h2sxxa.github.io/",
       description: "Toho lover",
     },
+    {
+      title: "Shiro",
+      icon: "https://assets.moedev.cn/blog/photo/user/head.jpg!webp",
+      link: "https://shiro.love/",
+      description: "白白喵",
+    },
   ],
 };
